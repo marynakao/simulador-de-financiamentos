@@ -47,3 +47,20 @@ document.querySelector('#formSimulacao').addEventListener('submit', (e) => {
 
     simulaFinanciamento();
 });
+
+document.querySelector('#limpar').addEventListener('click', novaSimulacao);
+
+function novaSimulacao() {
+    document.querySelector('#simulaValor').value = '';
+    document.querySelector('#simulaPrazo').value  = '';
+    document.querySelector('#simulaJuros').value  = '';
+
+    document.querySelector("#resultadoPrazo").value  = '';
+    document.querySelector("#resultadoJurosMes").value  = '';
+    document.querySelector("#resultadoJuroaAc").value  = '';
+
+    for (let i = 0; i < 5; i++) {
+
+        document.querySelector('#tabelaCorpo').innerHTML = '';
+    }
+}
