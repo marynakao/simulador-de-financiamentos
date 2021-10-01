@@ -25,7 +25,7 @@ h1 {
 }
 
 
-form, #resultado {
+form, #resultado, #limpar {
     display: flex;
     width: 100px;
     margin: auto;
@@ -43,7 +43,7 @@ form input {
     padding: 7px;
 }
 
-form button {
+button{
     border: none;
     padding: 4px;
     margin-top: 23px;
@@ -55,6 +55,11 @@ form button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #090909;
+    color: #1aad66;
+    transition: .3s;
+}
 
 #resultado label {
     color: #fff;
@@ -62,7 +67,6 @@ form button {
     padding: 10px;
     
 }
-
 
 #resultado input {
     color: #090909;
@@ -92,4 +96,10 @@ table th{
 table td {
     text-align: center;
     padding: 0 10px;
+}
+
+#limpar {
+    margin-top: 20px;
+    padding: 4px;
+    width: 150px;
 }
